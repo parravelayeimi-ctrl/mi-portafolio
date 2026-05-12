@@ -1,39 +1,44 @@
-/* Regla 1: Estilo para todo el cuerpo (Fondo y fuente) */
+/* 1. Fondo y fuente general */
 body {
-    background-color: #f4f4f9;
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
+    background-color: #f3e5f5; /* Lila muy clarito */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a148c; /* Morado oscuro para el texto */
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
-/* Regla 2: Estilo para el encabezado (Color de marca) */
+/* 2. Encabezado con degradado lila */
 header {
-    background-color: #1B3256; /* Azul oscuro */
+    background: linear-gradient(135deg, #ce93d8, #ab47bc);
     color: white;
-    padding: 2rem;
+    padding: 30px;
     text-align: center;
-    border-radius: 8px;
 }
 
-/* Regla 3: Estilo para los títulos de sección */
+/* 3. Estilo para tu foto circular */
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Esto la hace redonda */
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* 4. Estilo de los títulos */
 h2 {
-    color: #67D7DF; /* Turquesa */
-    border-bottom: 2px solid #1B3256;
-    padding-bottom: 10px;
+    color: #7b1fa2;
+    border-bottom: 2px solid #ba68c8;
+    display: inline-block;
+    padding-right: 20px;
 }
 
-/* Regla 4: Estilo para las listas */
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-/* Regla 5: Estilo para el pie de página */
-footer {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 0.9em;
-    color: #777;
+/* 5. Contenedor principal */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
